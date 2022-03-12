@@ -1,0 +1,1651 @@
+{
+	"info": {
+		"_postman_id": "4b6679d4-5c50-4972-975f-1f797dbd7ea1",
+		"name": "Laravel Api Assignment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Aditya",
+							"type": "text"
+						},
+						{
+							"key": "email",
+							"value": "test123@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "123456789",
+							"type": "text"
+						},
+						{
+							"key": "c_password",
+							"value": "123456789",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/register",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"register"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Register",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Aditya",
+									"type": "text"
+								},
+								{
+									"key": "email",
+									"value": "test123@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "123456789",
+									"type": "text"
+								},
+								{
+									"key": "c_password",
+									"value": "123456789",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/register",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"register"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 12 Mar 2022 13:19:39 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 12 Mar 2022 13:19:39 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.3"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"token\": \"1|clp5F0tS0pUAoZmD8Q7Hs7EoC9GQXrqxReq9AeMq\",\n        \"name\": \"Aditya\"\n    },\n    \"message\": \"User register successfully.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "email",
+							"value": "test@gmail.com",
+							"type": "text"
+						},
+						{
+							"key": "password",
+							"value": "12345678",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/login",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Login",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "email",
+									"value": "test@gmail.com",
+									"type": "text"
+								},
+								{
+									"key": "password",
+									"value": "12345678",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/login",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"login"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 12 Mar 2022 13:20:15 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 12 Mar 2022 13:20:15 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.3"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "57"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"token\": \"2|mPlnlRI61rLNVmezSockScG1i38TBRvbvB8Hqa57\",\n        \"name\": \"7J8slPxONL\"\n    },\n    \"message\": \"User login successfully.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Store Book",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "2|mPlnlRI61rLNVmezSockScG1i38TBRvbvB8Hqa57",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "category_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "uuid",
+							"value": "23423",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "JQuery",
+							"type": "text"
+						},
+						{
+							"key": "releaseDate",
+							"value": "2022-03-12",
+							"type": "text"
+						},
+						{
+							"key": "authorName",
+							"value": "Rahul",
+							"type": "text"
+						},
+						{
+							"key": "retailsPrice",
+							"value": "250",
+							"type": "text"
+						},
+						{
+							"key": "imageName",
+							"type": "file",
+							"src": "xazEs0rcH/Untitled.png"
+						},
+						{
+							"key": "description",
+							"value": "123",
+							"type": "text"
+						},
+						{
+							"key": "pages",
+							"value": "252",
+							"type": "text"
+						},
+						{
+							"key": "publisher",
+							"value": "Shyam",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/book/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"book",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Store Book",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "category_id",
+									"value": "1",
+									"type": "text"
+								},
+								{
+									"key": "uuid",
+									"value": "23423",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "JQuery",
+									"type": "text"
+								},
+								{
+									"key": "releaseDate",
+									"value": "2022-03-12",
+									"type": "text"
+								},
+								{
+									"key": "authorName",
+									"value": "Rahul",
+									"type": "text"
+								},
+								{
+									"key": "retailsPrice",
+									"value": "250",
+									"type": "text"
+								},
+								{
+									"key": "imageName",
+									"type": "file",
+									"src": "xazEs0rcH/Untitled.png"
+								},
+								{
+									"key": "description",
+									"value": "123",
+									"type": "text"
+								},
+								{
+									"key": "pages",
+									"value": "252",
+									"type": "text"
+								},
+								{
+									"key": "publisher",
+									"value": "Shyam",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/book/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"book",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 12 Mar 2022 13:21:05 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 12 Mar 2022 13:21:05 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.3"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"category_id\": \"1\",\n        \"uuid\": \"23423\",\n        \"name\": \"JQuery\",\n        \"releaseDate\": \"2022-03-12\",\n        \"authorName\": \"Rahul\",\n        \"retailsPrice\": \"250\",\n        \"imageName\": \"202203121321Untitled.png\",\n        \"updated_at\": \"2022-03-12T13:21:04.000000Z\",\n        \"created_at\": \"2022-03-12T13:21:04.000000Z\",\n        \"id\": 4,\n        \"book_details\": {\n            \"book_id\": 4,\n            \"description\": \"123\",\n            \"pages\": \"252\",\n            \"publisher\": \"Shyam\",\n            \"updated_at\": \"2022-03-12T13:21:04.000000Z\",\n            \"created_at\": \"2022-03-12T13:21:04.000000Z\",\n            \"id\": 4\n        }\n    },\n    \"message\": \"Book created successfully.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Get All Books",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "2|mPlnlRI61rLNVmezSockScG1i38TBRvbvB8Hqa57",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/book/",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"book",
+						""
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get All Books",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/book/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"book",
+								""
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 12 Mar 2022 13:21:29 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 12 Mar 2022 13:21:29 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.3"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": [\n        {\n            \"id\": 1,\n            \"category_id\": 1,\n            \"uuid\": \"ZnX4WqmBsN\",\n            \"name\": \"PHP\",\n            \"releaseDate\": \"2022-03-01 00:00:00\",\n            \"authorName\": \"Zgx5AwZWds\",\n            \"retailsPrice\": 500,\n            \"imageName\": \"202203121308Top-View-Book-PSD-Mockup-1-327x400.jpg\",\n            \"created_at\": \"2022-03-12T13:18:45.000000Z\",\n            \"updated_at\": \"2022-03-12T13:18:45.000000Z\",\n            \"description\": \"5p7Idm4m1wvzJcQBTD3L\",\n            \"pages\": 416,\n            \"publisher\": \"Kbvfio4gT7\"\n        },\n        {\n            \"id\": 2,\n            \"category_id\": 1,\n            \"uuid\": \"SVyqrbjiaM\",\n            \"name\": \"Java\",\n            \"releaseDate\": \"2022-05-01 00:00:00\",\n            \"authorName\": \"F83k76xGtD\",\n            \"retailsPrice\": 500,\n            \"imageName\": \"202203121308ea932bb98415afec4e45913f5628a54a.jpg\",\n            \"created_at\": \"2022-03-12T13:18:45.000000Z\",\n            \"updated_at\": \"2022-03-12T13:18:45.000000Z\",\n            \"description\": \"SXqGJTmeJPh1I4x0Vbgv\",\n            \"pages\": 416,\n            \"publisher\": \"h8JYNODYr9\"\n        },\n        {\n            \"id\": 3,\n            \"category_id\": 2,\n            \"uuid\": \"AAE29r8ayr\",\n            \"name\": \"C#\",\n            \"releaseDate\": \"2022-03-01 00:00:00\",\n            \"authorName\": \"8akDKaEtCP\",\n            \"retailsPrice\": 900,\n            \"imageName\": \"202203121307psd-book-template.jpg\",\n            \"created_at\": \"2022-03-12T13:18:46.000000Z\",\n            \"updated_at\": \"2022-03-12T13:18:46.000000Z\",\n            \"description\": \"RRwpErDmv55t1RtzM1Ri\",\n            \"pages\": 716,\n            \"publisher\": \"oaEyIg70bX\"\n        },\n        {\n            \"id\": 4,\n            \"category_id\": 1,\n            \"uuid\": \"23423\",\n            \"name\": \"JQuery\",\n            \"releaseDate\": \"2022-03-12 00:00:00\",\n            \"authorName\": \"Rahul\",\n            \"retailsPrice\": 250,\n            \"imageName\": \"202203121321Untitled.png\",\n            \"created_at\": \"2022-03-12T13:21:04.000000Z\",\n            \"updated_at\": \"2022-03-12T13:21:04.000000Z\",\n            \"description\": \"123\",\n            \"pages\": 252,\n            \"publisher\": \"Shyam\"\n        }\n    ],\n    \"message\": \"Book retrieved successfully.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "View Book Details",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "2|mPlnlRI61rLNVmezSockScG1i38TBRvbvB8Hqa57",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/book/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"book",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "View Book Details",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/book/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"book",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 12 Mar 2022 13:21:46 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 12 Mar 2022 13:21:46 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.3"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "57"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": [\n        {\n            \"id\": 1,\n            \"category_id\": 1,\n            \"uuid\": \"ZnX4WqmBsN\",\n            \"name\": \"PHP\",\n            \"releaseDate\": \"2022-03-01 00:00:00\",\n            \"authorName\": \"Zgx5AwZWds\",\n            \"retailsPrice\": 500,\n            \"imageName\": \"202203121308Top-View-Book-PSD-Mockup-1-327x400.jpg\",\n            \"created_at\": \"2022-03-12T13:18:45.000000Z\",\n            \"updated_at\": \"2022-03-12T13:18:45.000000Z\",\n            \"description\": \"5p7Idm4m1wvzJcQBTD3L\",\n            \"pages\": 416,\n            \"publisher\": \"Kbvfio4gT7\"\n        }\n    ],\n    \"message\": \"Book retrieved successfully.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Book",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "2|mPlnlRI61rLNVmezSockScG1i38TBRvbvB8Hqa57",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "category_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "uuid",
+							"value": "23423",
+							"type": "text"
+						},
+						{
+							"key": "name",
+							"value": "JavaScript",
+							"type": "text"
+						},
+						{
+							"key": "releaseDate",
+							"value": "2022-03-12",
+							"type": "text"
+						},
+						{
+							"key": "authorName",
+							"value": "Rahul",
+							"type": "text"
+						},
+						{
+							"key": "retailsPrice",
+							"value": "250",
+							"type": "text"
+						},
+						{
+							"key": "imageName",
+							"type": "file",
+							"src": "Iaez2L9ld/ea932bb98415afec4e45913f5628a54a.jpg",
+							"disabled": true
+						},
+						{
+							"key": "description",
+							"value": "ABC",
+							"type": "text",
+							"disabled": true
+						},
+						{
+							"key": "pages",
+							"value": "52",
+							"type": "text"
+						},
+						{
+							"key": "publisher",
+							"value": "Test123",
+							"type": "text"
+						},
+						{
+							"key": "_method",
+							"value": "put",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/book/1",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"book",
+						"1"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update Book",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "category_id",
+									"value": "2",
+									"type": "text"
+								},
+								{
+									"key": "uuid",
+									"value": "23423",
+									"type": "text"
+								},
+								{
+									"key": "name",
+									"value": "JavaScript",
+									"type": "text"
+								},
+								{
+									"key": "releaseDate",
+									"value": "2022-03-12",
+									"type": "text"
+								},
+								{
+									"key": "authorName",
+									"value": "Rahul",
+									"type": "text"
+								},
+								{
+									"key": "retailsPrice",
+									"value": "250",
+									"type": "text"
+								},
+								{
+									"key": "imageName",
+									"type": "file",
+									"src": "Iaez2L9ld/ea932bb98415afec4e45913f5628a54a.jpg",
+									"disabled": true
+								},
+								{
+									"key": "description",
+									"value": "ABC",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "pages",
+									"value": "52",
+									"type": "text"
+								},
+								{
+									"key": "publisher",
+									"value": "Test123",
+									"type": "text"
+								},
+								{
+									"key": "_method",
+									"value": "put",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/book/1",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"book",
+								"1"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 12 Mar 2022 13:22:24 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 12 Mar 2022 13:22:24 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.3"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"id\": 1,\n        \"category_id\": \"2\",\n        \"uuid\": \"23423\",\n        \"name\": \"JavaScript\",\n        \"releaseDate\": \"2022-03-12\",\n        \"authorName\": \"Rahul\",\n        \"retailsPrice\": \"250\",\n        \"imageName\": \"202203121308Top-View-Book-PSD-Mockup-1-327x400.jpg\",\n        \"created_at\": \"2022-03-12T13:18:45.000000Z\",\n        \"updated_at\": \"2022-03-12T13:22:24.000000Z\",\n        \"book_details\": {\n            \"id\": 1,\n            \"book_id\": 1,\n            \"description\": \"5p7Idm4m1wvzJcQBTD3L\",\n            \"pages\": \"52\",\n            \"publisher\": \"Test123\",\n            \"created_at\": \"2022-03-12T13:18:45.000000Z\",\n            \"updated_at\": \"2022-03-12T13:22:24.000000Z\"\n        }\n    },\n    \"message\": \"Book updated successfully.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Book",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "2|mPlnlRI61rLNVmezSockScG1i38TBRvbvB8Hqa57",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/book/4",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"book",
+						"4"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete Book",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/book/4",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"book",
+								"4"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 12 Mar 2022 13:22:52 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 12 Mar 2022 13:22:52 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.3"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": [],\n    \"message\": \"Book deleted successfully.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Get All Category",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "2|mPlnlRI61rLNVmezSockScG1i38TBRvbvB8Hqa57",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/category",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"category"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Get All Category",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/category",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"category"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 12 Mar 2022 13:25:05 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 12 Mar 2022 13:25:05 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.3"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": [\n        {\n            \"id\": 1,\n            \"name\": \"Computer Science\",\n            \"description\": \"Computer Programming,Data Structure,etc\",\n            \"created_at\": \"2022-03-12T13:18:45.000000Z\",\n            \"updated_at\": \"2022-03-12T13:18:45.000000Z\"\n        },\n        {\n            \"id\": 2,\n            \"name\": \"Social Science\",\n            \"description\": \"History of Culture\",\n            \"created_at\": \"2022-03-12T13:18:46.000000Z\",\n            \"updated_at\": \"2022-03-12T13:18:46.000000Z\"\n        }\n    ],\n    \"message\": \"Categories retrieved successfully.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Add New Category",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "2|mPlnlRI61rLNVmezSockScG1i38TBRvbvB8Hqa57",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "Math",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "Math books",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/category",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"category"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Add New Category",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "Math",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Math books",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/category",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"category"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 12 Mar 2022 13:26:32 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 12 Mar 2022 13:26:32 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.3"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"name\": \"Math\",\n        \"description\": \"Math books\",\n        \"updated_at\": \"2022-03-12T13:26:32.000000Z\",\n        \"created_at\": \"2022-03-12T13:26:32.000000Z\",\n        \"id\": 3\n    },\n    \"message\": \"Category created successfully.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Update Category",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "2|mPlnlRI61rLNVmezSockScG1i38TBRvbvB8Hqa57",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "name",
+							"value": "New Math ",
+							"type": "text"
+						},
+						{
+							"key": "description",
+							"value": "New Math books",
+							"type": "text"
+						},
+						{
+							"key": "_method",
+							"value": "put",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/category/3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"category",
+						"3"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Update Category",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "name",
+									"value": "New Math ",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "New Math books",
+									"type": "text"
+								},
+								{
+									"key": "_method",
+									"value": "put",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/category/3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"category",
+								"3"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 12 Mar 2022 13:29:27 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 12 Mar 2022 13:29:27 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.3"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"id\": 3,\n        \"name\": \"New Math\",\n        \"description\": \"New Math books\",\n        \"created_at\": \"2022-03-12T13:26:32.000000Z\",\n        \"updated_at\": \"2022-03-12T13:29:27.000000Z\"\n    },\n    \"message\": \"Category updated successfully.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "View Category",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "2|mPlnlRI61rLNVmezSockScG1i38TBRvbvB8Hqa57",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/category/3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"category",
+						"3"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "View Category",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/category/3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"category",
+								"3"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 12 Mar 2022 13:30:06 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 12 Mar 2022 13:30:06 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.3"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "58"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [
+						{
+							"expires": "Invalid Date"
+						}
+					],
+					"body": "{\n    \"success\": true,\n    \"data\": {\n        \"id\": 3,\n        \"name\": \"New Math\",\n        \"description\": \"New Math books\",\n        \"created_at\": \"2022-03-12T13:26:32.000000Z\",\n        \"updated_at\": \"2022-03-12T13:29:27.000000Z\"\n    },\n    \"message\": \"Category retrieved successfully.\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete Category",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "2|mPlnlRI61rLNVmezSockScG1i38TBRvbvB8Hqa57",
+							"type": "string"
+						}
+					]
+				},
+				"method": "DELETE",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": []
+				},
+				"url": {
+					"raw": "http://127.0.0.1:8000/api/category/3",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"category",
+						"3"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Delete Category",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/category/3",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"category",
+								"3"
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Host",
+							"value": "127.0.0.1:8000"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 12 Mar 2022 13:31:25 GMT"
+						},
+						{
+							"key": "Date",
+							"value": "Sat, 12 Mar 2022 13:31:25 GMT"
+						},
+						{
+							"key": "Connection",
+							"value": "close"
+						},
+						{
+							"key": "X-Powered-By",
+							"value": "PHP/8.1.3"
+						},
+						{
+							"key": "Cache-Control",
+							"value": "no-cache, private"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "X-RateLimit-Limit",
+							"value": "60"
+						},
+						{
+							"key": "X-RateLimit-Remaining",
+							"value": "59"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"success\": true,\n    \"data\": [],\n    \"message\": \"Category deleted successfully.\"\n}"
+				}
+			]
+		}
+	]
+}
